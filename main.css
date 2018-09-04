@@ -1,0 +1,28 @@
+body {
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3vw;
+    color: #adadad;
+    font-family: 'Lato', 'sans-serif';
+    width: 100%;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+h1 span {
+    color: #cc3b4c;
+    font-size: 5vw;
+}
+
+
