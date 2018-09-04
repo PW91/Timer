@@ -9,6 +9,8 @@ var birthday = '07/03/1991'
 var lifespanInMilisec = lifespan * 365.25 * 24 * 60 * 60 * 1000
 var timerEl = document.getElementById('js-timer')
 
+milisecondsTransformer()
+
 setInterval(milisecondsTransformer, 1000)
 
 function milisecondsTransformer() {
