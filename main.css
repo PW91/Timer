@@ -11,18 +11,35 @@ body {
     width: 100%;
 }
 
-h1 {
-    font-size: 3vw;
-    color: #adadad;
+p {
     font-family: 'Lato', 'sans-serif';
-    width: 100%;
-    text-align: center;
+    display: inline-block;
+    font-size: 3vw;
+    font-weight: 700;
+    color: #ADADAD;
     letter-spacing: 4px;
+    padding: 1vw;
+
 }
 
-h1 span {
-    color: #cc3b4c;
+p span {
     font-size: 5vw;
+    color: #CC3B4C;
+    font-family: 'Lato', 'sans-serif';
+}
+
+@media(max-width: 991px) {
+    p {
+        display: block;
+        text-align: right;
+        font-size: 30px;
+        padding: 5px;
+       
+    }
+
+    p span {
+        font-size: 50px;
+    }
 }
 
 

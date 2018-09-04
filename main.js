@@ -7,10 +7,13 @@ var birthday = '07/03/1991'
 //______________________________________________________________
 
 var lifespanInMilisec = lifespan * 365.25 * 24 * 60 * 60 * 1000
-var timerEl = document.getElementById('js-timer')
+var yearsEl = document.getElementById('js-years')
+var daysEl = document.getElementById('js-days')
+var hoursEl = document.getElementById('js-hours')
+var minutesEl = document.getElementById('js-minutes')
+var secondsEl = document.getElementById('js-seconds')
 
-milisecondsTransformer()
-
+setInterval(milisecondsTransformer)
 setInterval(milisecondsTransformer, 1000)
 
 function milisecondsTransformer() {
@@ -59,14 +62,11 @@ function milisecondsTransformer() {
         formattedSeconds = '0' + seconds
     }
 
-    toEndFormatted = 
-        "<span>" + formattedYears + "</span>" + " y " + 
-        "<span>" + formattedDays + "</span>"+ " d " + 
-        "<span>" + formattedHours + "</span>"+ " h " + 
-        "<span>" + formattedMinutes + "</span>" + " m " + 
-        "<span>" + formattedSeconds + "</span>" + " s"
-
-    timerEl.innerHTML = toEndFormatted
+    yearsEl.innerHTML = formattedYears
+    daysEl.innerHTML = formattedDays
+    hoursEl.innerHTML = formattedHours
+    minutesEl.innerHTML = formattedMinutes
+    secondsEl.innerHTML = formattedSeconds
 }
 
 
